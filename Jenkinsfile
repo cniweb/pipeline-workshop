@@ -1,7 +1,7 @@
 node {
    stage('Preparation') {
       parallel Tools: {
-        echo 'Install Tools'
+        echo 'Install/Check Tools'
         sleep 10
       }, Git: {
         echo 'Git clone/fetch'
